@@ -1,17 +1,10 @@
 package sort
 
-import org.junit.Assert.assertArrayEquals
 import org.junit.Test
+import org.junit.Assert.assertArrayEquals
+
 
 class QuickSortTest {
-
-    @Test
-    fun testQuickSort1() {
-        val array = arrayOf(4, 3, 2, 8, 1)
-        quickSort(array, 0, array.size - 1)
-
-        assertArrayEquals(array, arrayOf(1, 2, 3, 4, 8))
-    }
 
     @Test
     fun testQuickSort2() {
@@ -20,7 +13,7 @@ class QuickSortTest {
 
         assertArrayEquals(array, arrayOf("A", "B", "C", "D", "E"))
     }
-
+    
     @Test
     fun testQuickSort3() {
         val array = arrayOf(20, 5, 16, -1, 6)
@@ -28,4 +21,18 @@ class QuickSortTest {
 
         assertArrayEquals(array, arrayOf(-1, 5, 6, 16, 20))
     }
+    
+    
+    
+    @Test
+    fun testQuickSort1() {
+        val array = arrayOf(4, 3, 2, 8, 1)
+        quickSort(array, 0, array.size - 1)
+
+        assertArrayEquals(array, arrayOf(1, 2, 3, 4, 8))
+    }
+
+   
+
+    
 }
